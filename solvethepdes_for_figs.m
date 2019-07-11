@@ -77,7 +77,7 @@ function [rac,rho,raci,rhoi] = solvethepdes(Du,i,X,ids,u1init,u2init,pu1height,p
 
   function u0 = icperturb(x)
     pwidth=0.1;
-    u0 = [u1init+pu1height*(x<pwidth);v2init-(pu1height*pwidth);u2init+pu2height*(x<pwidth);v2init-(pu2height*pwidth)];
+    u0 = [u1init+pu1height*(x<pwidth);v1init-(pu1height*pwidth);u2init+pu2height*(x<pwidth);v2init-(pu2height*pwidth)]; %THERE WAS AN ERROR HERE> I HAD v2init instead of v1init in the second entry!
   end
 
   function [pl,ql,pr,qr] = bcfunction(xl,ul,xr,ur,t)
