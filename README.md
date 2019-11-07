@@ -1,6 +1,7 @@
 # WM/LPA/PDE Parameter Screen
 
-Code for MODELING CELL SHAPE DIVERSITY ARISING FROM COMPLEX RHO GTPASE DYNAMICS
+Code for SIMPLE RHO GTPASE DYNAMICS GENERATE A COMPLEX REGULATORY LANDSCAPE ASSOCIATED WITH CELL SHAPE
+
 
 Cole Zmurchok, William R. Holmes
 
@@ -15,6 +16,7 @@ or
 * Matlab (I used version 2018b locally and 2018a on ACCRE).
 * matcont (https://sourceforge.net/projects/matcont/).
 * FEniCS (for 2D simulations https://fenicsproject.org/)
+* Python (I use python 3 available via Anaconda)
 
 ## License
 
@@ -56,11 +58,11 @@ I split the 10^6 parameter sets up into 20 blocks of 50000 for parallel computin
 
 #### Figures:
 
-1. Fig2.m: generates Fig 2. Needs Fig2a_functions.m and Fig2b_functions.m
-2. Fig3.m: generates panels (a) to (f) of Fig 3. Needs solver.m.
-3. Fig4x.py: generates data for panel (x) of Fig 4. Requires FEniCS. The data in Fig4d was collected from simulations shown in Fig 4a-c. pub_plotter.py makes the panels for the figure, and plotter.py makes the SI Movies.
-3. Figure 5 is produced in the screening above, with ParameterScreen_plots.m, PDEscreen_plots.m, and tristable_stability.m.
-4. Figure 6 is produced with Fig6.m and Fig6a_driver.m, Fig6c_driver.m, and Fig6d_driver.m
+1. Fig3.m: generates Fig 3. Needs Fig3a_functions.m and Fig3b_functions.m
+2. Fig4.m: generates panels (a) to (f) of Fig 4. Needs solver.m.
+3. Fig5x.py: generates data for panel (x) of Fig 5. Requires FEniCS. The data in Fig4d was collected from simulations shown in Fig 5a-c. pub_plotter.py makes the panels for the figure, and plotter.py makes the SI Movies. Data for (d) is collected in Fig5_data.csv and plotted with Fig5d.py.
+3. Figure 6 is produced in the screening above, with ParameterScreen_plots.m, PDEscreen_plots.m, and tristable_stability.m.
+4. Figure 7 is produced with Fig7.m and Fig7a_driver.m, Fig7b_driver.m, and Fig7c_driver.m
 
 #### Other Files:
 
